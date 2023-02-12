@@ -9,11 +9,11 @@ document.getElementById('login-btn').addEventListener('click',function(){
     const inputFieldPassword=document.getElementById('input-field-password');
     const password=inputFieldPassword.value;
     
-    if(email==='mdeasinsarkar01@gmail.com' && password==='yeasin'){
-        console.log('Valid user');
+    if(email==='mshasiba@gmail.com' && password==='ami khovish'){
+        window.location.href = 'bank.html';
     }
-    else{
-        console.log('Invalid user');
-    }
+       else{
+        alert('Wrong password den kn?? Password den - ami khovish');
+       }
 
 });
