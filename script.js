@@ -9,7 +9,7 @@ document.getElementById('login-btn').addEventListener('click',function(){
     const inputFieldPassword=document.getElementById('input-field-password');
     const password=inputFieldPassword.value;
     
-    if(email==='sanjirtayon@gmail.com' && password==='ami khovish'){
+    if(email==='sanjirtayon@gmail.com' && password==='Toya oh ah oh'){
         window.location.href = 'bank.html';
     }
        else{
