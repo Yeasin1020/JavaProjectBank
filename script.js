@@ -13,7 +13,7 @@ document.getElementById('login-btn').addEventListener('click',function(){
         window.location.href = 'bank.html';
     }
        else{
-        alert('Wrong password den kn?? Password den - ami khovish');
+        alert('Wrong password den kn?? Password den - Toya oh ah oh');
        }
 
 });

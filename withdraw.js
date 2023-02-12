@@ -13,7 +13,7 @@
      withdrawInput.value='';
 
      if(isNaN(newWithdrawAmount)){
-      alert('Please provide valid number.Bojen na naki🤣');
+      alert('Please provide valid number.Toya ki dey na naki matha thik nai🤣');
       return;
     }
 
