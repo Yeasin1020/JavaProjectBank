@@ -7,6 +7,13 @@ document.getElementById('deposit-btn').addEventListener('click',function(){
     const previousDepositTotalString=deposit.innerText;
     const previousDepositTotal=parseFloat(previousDepositTotalString);
 
+    depositInput.value='';
+
+    if(isNaN(newDepositValue)){
+        alert('Please provide valid number.Bojen na naki🤣.');
+        return;
+      }
+
     const currentDepositAmount=previousDepositTotal+newDepositValue;
 
     deposit.innerText=currentDepositAmount;

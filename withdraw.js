@@ -4,12 +4,18 @@
     const newWithdrawAmountString=withdrawInput.value;
     const newWithdrawAmount=parseFloat(newWithdrawAmountString);
 
+  
+
      const withdrawField=document.getElementById('withdraw-field');
      const withdrawAmountString=withdrawField.innerText;
      const withdrawAmount=parseFloat(withdrawAmountString);
-    
-     const currentWithdrawAmount=withdrawAmount+newWithdrawAmount;
-     withdrawField.innerText=currentWithdrawAmount;
+
+     withdrawInput.value='';
+
+     if(isNaN(newWithdrawAmount)){
+      alert('Please provide valid number.Bojen na naki🤣');
+      return;
+    }
 
     
 
@@ -24,9 +30,23 @@
     const balance=document.getElementById('balance');
     const balanceTotalString=balance.innerText;
     const balanceTotal=parseFloat(balanceTotalString);
+
+    
+
+    if(balanceTotal<newWithdrawAmount){
+      alert('kajta balo koren nai apnar babar bank a eto tk nai');
+      return;
+     };
+
+     
+     const currentWithdrawAmount=withdrawAmount+newWithdrawAmount;
+     withdrawField.innerText=currentWithdrawAmount;
+
     const currentBalanceTotal=balanceTotal-newWithdrawAmount;
     balance.innerText=currentBalanceTotal;
 
-    withdrawInput.value='';
+    
+
+   
 
 });
